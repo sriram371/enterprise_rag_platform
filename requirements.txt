@@ -1,0 +1,138 @@
+# ============================================================
+# CORE BACKEND API LAYER (FastAPI service)
+# Handles HTTP requests, routing, middleware, orchestration
+# ============================================================
+
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic==2.9.2
+
+
+# ============================================================
+# DATABASE LAYER (PostgreSQL + pgvector)
+# Used for:
+# - vector storage
+# - memory storage
+# - logging
+# - evaluation metrics
+# ============================================================
+
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.35
+pgvector==0.2.5
+
+
+# ============================================================
+# LLM INTEGRATION LAYER (AWS Bedrock)
+# Used for:
+# - text generation
+# - embeddings
+# - model inference
+# ============================================================
+
+boto3==1.35.24
+botocore==1.35.24
+
+
+# ============================================================
+# CONFIGURATION & ENVIRONMENT LAYER
+# Used for managing secrets and environment variables
+# ============================================================
+
+python-dotenv==1.0.1
+
+
+# ============================================================
+# DOCUMENT INGESTION LAYER
+# Used for:
+# - parsing PDFs
+# - parsing Excel files
+# - document preprocessing
+# ============================================================
+
+pypdf==5.0.0
+openpyxl==3.1.5
+
+
+# ============================================================
+# DATA PROCESSING LAYER
+# Used for:
+# - data transformation
+# - preprocessing
+# - evaluation data handling
+# ============================================================
+
+pandas==2.2.2
+numpy==1.26.4
+
+
+# ============================================================
+# RETRIEVAL EVALUATION LAYER
+# Used for:
+# - Recall@K
+# - Precision@K
+# - MRR
+# - similarity calculations
+# ============================================================
+
+scikit-learn==1.5.1
+scipy==1.14.1
+
+
+# ============================================================
+# FRONTEND LAYER (Streamlit Chat UI)
+# Used for:
+# - chatbot interface
+# - displaying responses
+# ============================================================
+
+streamlit==1.38.0
+requests==2.32.3
+
+
+# ============================================================
+# MEMORY & PROMPT PROCESSING LAYER
+# Used for:
+# - prompt templates
+# - structured memory handling
+# ============================================================
+
+jinja2==3.1.4
+
+
+# ============================================================
+# LOGGING & MONITORING LAYER
+# Used for:
+# - structured logging
+# - debugging
+# - observability
+# ============================================================
+
+loguru==0.7.2
+
+
+# ============================================================
+# DEPLOYMENT LAYER (AWS Lambda)
+# Used for deploying FastAPI on AWS Lambda
+# ============================================================
+
+mangum==0.17.0
+
+
+# ============================================================
+# SECURITY & AUTHENTICATION LAYER
+# Used for:
+# - JWT validation
+# - authentication
+# ============================================================
+
+python-jose==3.3.0
+passlib==1.7.4
+
+
+# ============================================================
+# OPTIONAL (HIGHLY RECOMMENDED) PERFORMANCE LAYER
+# Used for caching, async support
+# ============================================================
+
+httpx==0.27.2
